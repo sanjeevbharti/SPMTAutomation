@@ -1,0 +1,343 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SelectFile" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="_filepath" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>654,696</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>SelectFile_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="22">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.CV</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="20">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="SelectFile" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">270,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">300,77.5 300,124</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID0</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID0">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">200,124</av:Point>
+          <av:Size x:Key="ShapeSize">200,52</av:Size>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ApiKey="AF/D6d0tN90K+QhhxWiW2J/FT99FwqDjfu7vD5UznfYD+IFnZOLhIpiV79zPIhX+" DisplayName="CV Screen Scope 'microsoft.sharepoint.mi...'" sap:VirtualizedContainerService.HintSize="555,1745" sap2010:WorkflowViewState.IdRef="CVScope_1" Server="https://cv.uipath.com" Version="V1">
+        <p:CVScope.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="563,1198" sap2010:WorkflowViewState.IdRef="Sequence_1">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:Boolean" Name="errorMessage" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <p:CvTypeIntoWithDescriptor DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (39,142,567,32)&quot; +&#xA;&quot;Anchor: Text 'What file share do you wv.ant to migrate?' (41,123,254,13)&quot;]" DesignTimeScaleFactor="2" DisplayName="CV Type Into - InputBox" EmptyField="True" sap:VirtualizedContainerService.HintSize="521,134" sap2010:WorkflowViewState.IdRef="CvTypeIntoWithDescriptor_1" InformativeScreenshot="be2e097325055d0ea8ca3aaf5ae7a4b4" Text="[_filepath]" Version="V1">
+                <p:CvTypeIntoWithDescriptor.DesignTimeDescriptor>
+                  <uc:CvDescriptor>
+                    <uc:CvDescriptor.Anchors>
+                      <x:Array Type="uc:CvElementDescriptor">
+                        <uc:CvElementDescriptor DesignTimeArea="41, 123, 254, 13" ElementType="Text" Text="What file share do you wv.ant to migrate?" />
+                      </x:Array>
+                    </uc:CvDescriptor.Anchors>
+                    <uc:CvDescriptor.Target>
+                      <uc:CvElementDescriptor DesignTimeArea="39, 142, 567, 32" ElementType="InputBox" />
+                    </uc:CvDescriptor.Target>
+                  </uc:CvDescriptor>
+                </p:CvTypeIntoWithDescriptor.DesignTimeDescriptor>
+                <p:CvTypeIntoWithDescriptor.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </p:CvTypeIntoWithDescriptor.Target>
+              </p:CvTypeIntoWithDescriptor>
+              <p:CVRefresh DelayBefore="{x:Null}" TimeoutMS="{x:Null}" DisplayName="CV refresh" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="CVRefresh_1" InformativeScreenshot="788e406f56ec40509bd00c7987bcabbc" IsMoveMouseEnabled="False" Version="V1">
+                <p:CVRefresh.DesignTimeCache>
+                  <uc:CVCache InformativeScreenshot="f7383827d47371fcb8b7da486f21aca5" LogicalPosition="208, 208" OcrText="x&#xA;What file share do you wv.ant to migrate?&#xA;Choose folder Next C.a ncel" Position="208, 208" ScaleFactor="2" ScreenshotGuid="26a7d0ac-1ad1-457b-9f14-b525b68325bc" ServerVersion="1">
+                    <uc:CVCache.CvUiElements>
+                      <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="16">
+                        <uc:CvElementInfo Category="Button" Confidence="DesignTime" Region="534, 589, 81, 34" Score="1" />
+                        <uc:CvElementInfo Category="Button" Confidence="DesignTime" Region="624, 590, 85, 33" Score="1" />
+                        <uc:CvElementInfo Category="ArrowButton" Confidence="DesignTime" Region="37, 61, 17, 22" Score="1" />
+                        <uc:CvElementInfo Category="CloseButton" Confidence="DesignTime" Region="708, 19, 20, 18" Score="1" />
+                        <uc:CvElementInfo Category="Button" Confidence="DesignTime" Region="41, 189, 129, 33" Score="1" />
+                        <uc:CvElementInfo Category="Icon" Confidence="DesignTime" Region="643, 18, 21, 21" Score="1" />
+                        <uc:CvElementInfo Category="MinimizeButton" Confidence="DesignTime" Region="676, 17, 20, 17" Score="1" />
+                        <uc:CvElementInfo Category="InputBox" Confidence="DesignTime" Region="41, 142, 561, 32" Score="1" />
+                        <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="644, 19, 20, 20" Score="1" />
+                        <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="676, 19, 19, 15" Score="1" />
+                        <uc:CvElementInfo Category="InputBox" Confidence="Runtime" Region="41, 189, 131, 33" Score="1" />
+                        <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="39, 62, 14, 19" Score="1" />
+                      </scg:List>
+                    </uc:CVCache.CvUiElements>
+                    <uc:CVCache.OcrTexts>
+                      <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="16">
+                        <uc:OcrTextInfo Region="713, 24, 10, 10" Text="x" />
+                        <uc:OcrTextInfo Region="41, 123, 34, 10" Text="What" />
+                        <uc:OcrTextInfo Region="79, 123, 19, 10" Text="file" />
+                        <uc:OcrTextInfo Region="103, 123, 33, 10" Text="share" />
+                        <uc:OcrTextInfo Region="141, 123, 15, 10" Text="do" />
+                        <uc:OcrTextInfo Region="161, 126, 22, 10" Text="you" />
+                        <uc:OcrTextInfo Region="189, 124, 30, 9" Text="wv.ant" />
+                        <uc:OcrTextInfo Region="224, 124, 12, 9" Text="to" />
+                        <uc:OcrTextInfo Region="241, 123, 54, 13" Text="migrate?" />
+                        <uc:OcrTextInfo Region="63, 201, 45, 10" Text="Choose" />
+                        <uc:OcrTextInfo Region="113, 201, 38, 10" Text="folder" />
+                        <uc:OcrTextInfo Region="560, 601, 31, 10" Text="Next" />
+                        <uc:OcrTextInfo Region="647, 601, 14, 10" Text="C.a" />
+                        <uc:OcrTextInfo Region="663, 601, 24, 10" Text="ncel" />
+                      </scg:List>
+                    </uc:CVCache.OcrTexts>
+                  </uc:CVCache>
+                </p:CVRefresh.DesignTimeCache>
+              </p:CVRefresh>
+              <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Button (534,589,81,34)&quot; +&#xA;&quot;Anchor: Text 'Next' (560,601,31,10)&quot;]" DesignTimeScaleFactor="2" DisplayName="CV Click - Button" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_1" InformativeScreenshot="d61a79c75efaa08adba453ab32fb3a61" KeyModifiers="None" MouseButton="BTN_LEFT" Version="V1">
+                <p:CvClickWithDescriptor.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </p:CvClickWithDescriptor.CursorPosition>
+                <p:CvClickWithDescriptor.DesignTimeDescriptor>
+                  <uc:CvDescriptor>
+                    <uc:CvDescriptor.Anchors>
+                      <x:Array Type="uc:CvElementDescriptor">
+                        <uc:CvElementDescriptor DesignTimeArea="560, 601, 31, 10" ElementType="Text" Text="Next" />
+                      </x:Array>
+                    </uc:CvDescriptor.Anchors>
+                    <uc:CvDescriptor.Target>
+                      <uc:CvElementDescriptor DesignTimeArea="534, 589, 81, 34" ElementType="Button" />
+                    </uc:CvDescriptor.Target>
+                  </uc:CvDescriptor>
+                </p:CvClickWithDescriptor.DesignTimeDescriptor>
+                <p:CvClickWithDescriptor.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </p:CvClickWithDescriptor.Target>
+              </p:CvClickWithDescriptor>
+              <p:CVRefresh DelayBefore="{x:Null}" TimeoutMS="{x:Null}" DisplayName="CV refresh" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="CVRefresh_2" InformativeScreenshot="d37b2ffc67bc591093eb911bfcf68901" Version="V1">
+                <p:CVRefresh.DesignTimeCache>
+                  <uc:CVCache InformativeScreenshot="aa4792116619175b1ca36b496b8be0a2" LogicalPosition="52, 52" OcrText="x&#xA;What file share do you wv.ant to migrate?&#xA;Choose folder&#xA;Ines -Est cr cennat be apilläd. to.' ecain. Next C.a ncel" Position="52, 52" ScaleFactor="2" ScreenshotGuid="ac723087-f627-43a9-b2ad-dfbb7470675b" ServerVersion="1">
+                    <uc:CVCache.CvUiElements>
+                      <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="16">
+                        <uc:CvElementInfo Category="Button" Confidence="DesignTime" Region="624, 590, 86, 32" Score="1" />
+                        <uc:CvElementInfo Category="Button" Confidence="DesignTime" Region="534, 589, 81, 34" Score="1" />
+                        <uc:CvElementInfo Category="ArrowButton" Confidence="DesignTime" Region="37, 61, 17, 22" Score="1" />
+                        <uc:CvElementInfo Category="CloseButton" Confidence="DesignTime" Region="708, 19, 20, 18" Score="1" />
+                        <uc:CvElementInfo Category="Button" Confidence="DesignTime" Region="40, 189, 131, 33" Score="1" />
+                        <uc:CvElementInfo Category="Icon" Confidence="DesignTime" Region="643, 18, 21, 21" Score="1" />
+                        <uc:CvElementInfo Category="MinimizeButton" Confidence="DesignTime" Region="676, 17, 20, 17" Score="1" />
+                        <uc:CvElementInfo Category="InputBox" Confidence="DesignTime" Region="43, 142, 577, 32" Score="1" />
+                        <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="644, 19, 20, 20" Score="1" />
+                        <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="676, 19, 19, 15" Score="1" />
+                        <uc:CvElementInfo Category="InputBox" Confidence="Runtime" Region="40, 189, 132, 33" Score="1" />
+                        <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="39, 62, 14, 19" Score="1" />
+                      </scg:List>
+                    </uc:CVCache.CvUiElements>
+                    <uc:CVCache.OcrTexts>
+                      <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="32">
+                        <uc:OcrTextInfo Region="713, 24, 10, 10" Text="x" />
+                        <uc:OcrTextInfo Region="41, 123, 34, 10" Text="What" />
+                        <uc:OcrTextInfo Region="79, 123, 19, 10" Text="file" />
+                        <uc:OcrTextInfo Region="103, 123, 33, 10" Text="share" />
+                        <uc:OcrTextInfo Region="141, 123, 15, 10" Text="do" />
+                        <uc:OcrTextInfo Region="161, 126, 22, 10" Text="you" />
+                        <uc:OcrTextInfo Region="189, 124, 30, 9" Text="wv.ant" />
+                        <uc:OcrTextInfo Region="224, 124, 12, 9" Text="to" />
+                        <uc:OcrTextInfo Region="241, 123, 54, 13" Text="migrate?" />
+                        <uc:OcrTextInfo Region="63, 201, 45, 10" Text="Choose" />
+                        <uc:OcrTextInfo Region="113, 201, 38, 10" Text="folder" />
+                        <uc:OcrTextInfo Region="105, 247, 20, 9" Text="Ines" />
+                        <uc:OcrTextInfo Region="152, 247, 21, 9" Text="-Est" />
+                        <uc:OcrTextInfo Region="178, 250, 10, 6" Text="cr" />
+                        <uc:OcrTextInfo Region="192, 248, 36, 8" Text="cennat" />
+                        <uc:OcrTextInfo Region="232, 247, 12, 9" Text="be" />
+                        <uc:OcrTextInfo Region="249, 247, 41, 12" Text="apilläd." />
+                        <uc:OcrTextInfo Region="331, 248, 14, 11" Text="to.'" />
+                        <uc:OcrTextInfo Region="349, 247, 30, 9" Text="ecain." />
+                        <uc:OcrTextInfo Region="560, 601, 31, 10" Text="Next" />
+                        <uc:OcrTextInfo Region="647, 601, 14, 10" Text="C.a" />
+                        <uc:OcrTextInfo Region="663, 601, 24, 10" Text="ncel" />
+                      </scg:List>
+                    </uc:CVCache.OcrTexts>
+                  </uc:CVCache>
+                </p:CVRefresh.DesignTimeCache>
+              </p:CVRefresh>
+              <p:CvElementExistsWithDescriptor Descriptor="[&quot;Target: Text '-Est cr cennat be apilläd.' (152,247,138,12)&quot;]" DesignTimeScaleFactor="2" DisplayName="CV Element Exists - Text" sap:VirtualizedContainerService.HintSize="521,106" sap2010:WorkflowViewState.IdRef="CvElementExistsWithDescriptor_1" InformativeScreenshot="1ed6d89e50adca27c21508081718cdbb" Result="[errorMessage]" Version="V1">
+                <p:CvElementExistsWithDescriptor.DesignTimeDescriptor>
+                  <uc:CvDescriptor>
+                    <uc:CvDescriptor.Target>
+                      <uc:CvElementDescriptor DesignTimeArea="152, 247, 138, 12" ElementType="Text" Text="-Est cr cennat be apilläd." />
+                    </uc:CvDescriptor.Target>
+                  </uc:CvDescriptor>
+                </p:CvElementExistsWithDescriptor.DesignTimeDescriptor>
+              </p:CvElementExistsWithDescriptor>
+              <If Condition="[errorMessage]" sap:VirtualizedContainerService.HintSize="521,709" sap2010:WorkflowViewState.IdRef="If_1">
+                <If.Else>
+                  <Sequence sap:VirtualizedContainerService.HintSize="376,560" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke SelectDestination workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="SelectDestination.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke ReviewMigration workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="ReviewMigration.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke Migrate workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="Migrate.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                    <ui:InvokeWorkflowFile ContinueOnError="{x:Null}" DisplayName="Invoke StopMigrationandCaptureResult workflow" sap:VirtualizedContainerService.HintSize="334,87" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="StopMigrationandCaptureResult.xaml">
+                      <ui:InvokeWorkflowFile.Arguments>
+                        <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                      </ui:InvokeWorkflowFile.Arguments>
+                    </ui:InvokeWorkflowFile>
+                  </Sequence>
+                </If.Else>
+              </If>
+            </Sequence>
+          </ActivityAction>
+        </p:CVScope.Body>
+        <p:CVScope.DesignTimeCache>
+          <uc:CVCache InformativeScreenshot="888e16de7c173d98f4033e877b55f4ef" LogicalPosition="208, 208" OcrText="x&#xA;What file share do you wv.ant to migrate?&#xA;Choose folder C.a ncel" Position="208, 208" ScaleFactor="2" ScreenshotGuid="888882eb-9eff-48b2-acff-59c246ca35c2" ServerVersion="1">
+            <uc:CVCache.CvUiElements>
+              <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="16">
+                <uc:CvElementInfo Category="Button" Confidence="DesignTime" Region="533, 590, 83, 33" Score="1" />
+                <uc:CvElementInfo Category="Button" Confidence="DesignTime" Region="624, 590, 85, 33" Score="1" />
+                <uc:CvElementInfo Category="ArrowButton" Confidence="DesignTime" Region="37, 61, 17, 22" Score="1" />
+                <uc:CvElementInfo Category="CloseButton" Confidence="DesignTime" Region="708, 19, 20, 18" Score="1" />
+                <uc:CvElementInfo Category="Button" Confidence="DesignTime" Region="41, 189, 130, 33" Score="1" />
+                <uc:CvElementInfo Category="Icon" Confidence="DesignTime" Region="643, 18, 21, 21" Score="1" />
+                <uc:CvElementInfo Category="MinimizeButton" Confidence="DesignTime" Region="676, 17, 20, 17" Score="1" />
+                <uc:CvElementInfo Category="InputBox" Confidence="DesignTime" Region="39, 142, 567, 32" Score="1" />
+                <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="644, 19, 20, 20" Score="1" />
+                <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="676, 19, 19, 15" Score="1" />
+                <uc:CvElementInfo Category="InputBox" Confidence="Runtime" Region="41, 189, 131, 33" Score="1" />
+                <uc:CvElementInfo Category="Icon" Confidence="Runtime" Region="39, 62, 14, 19" Score="1" />
+              </scg:List>
+            </uc:CVCache.CvUiElements>
+            <uc:CVCache.OcrTexts>
+              <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="16">
+                <uc:OcrTextInfo Region="713, 24, 10, 10" Text="x" />
+                <uc:OcrTextInfo Region="41, 123, 34, 10" Text="What" />
+                <uc:OcrTextInfo Region="79, 123, 19, 10" Text="file" />
+                <uc:OcrTextInfo Region="103, 123, 33, 10" Text="share" />
+                <uc:OcrTextInfo Region="141, 123, 15, 10" Text="do" />
+                <uc:OcrTextInfo Region="161, 126, 22, 10" Text="you" />
+                <uc:OcrTextInfo Region="189, 124, 30, 9" Text="wv.ant" />
+                <uc:OcrTextInfo Region="224, 124, 12, 9" Text="to" />
+                <uc:OcrTextInfo Region="241, 123, 54, 13" Text="migrate?" />
+                <uc:OcrTextInfo Region="63, 201, 45, 10" Text="Choose" />
+                <uc:OcrTextInfo Region="113, 201, 38, 10" Text="folder" />
+                <uc:OcrTextInfo Region="647, 601, 14, 10" Text="C.a" />
+                <uc:OcrTextInfo Region="663, 601, 24, 10" Text="ncel" />
+              </scg:List>
+            </uc:CVCache.OcrTexts>
+          </uc:CVCache>
+        </p:CVScope.DesignTimeCache>
+        <p:CVScope.OCREngine>
+          <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))">
+            <ActivityFunc.Argument>
+              <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+            </ActivityFunc.Argument>
+            <ui:MicrosoftOCR FilterRegion="{x:Null}" Language="{x:Null}" Output="{x:Null}" Scale="{x:Null}" Text="{x:Null}" ComputeSkewAngle="False" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="MicrosoftOCR_1" Image="[Image]" Profile="Screen" />
+          </ActivityFunc>
+        </p:CVScope.OCREngine>
+        <p:CVScope.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" InformativeScreenshot="a3f99f4dc3d283a5b1fc822e639b9fe0" Selector="&lt;wnd app='microsoft.sharepoint.migrationtool.advancedapp.exe' cls='HwndWrapper*' title='SharePoint Migration Tool - v3.2.114.7' /&gt;" WaitForReady="INTERACTIVE">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+          </ui:Target>
+        </p:CVScope.Target>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </p:CVScope>
+    </FlowStep>
+  </Flowchart>
+</Activity>

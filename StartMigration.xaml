@@ -1,0 +1,147 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="StartSPMT" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="654,696" sap2010:WorkflowViewState.IdRef="StartSPMT_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Flowchart DisplayName="StartSPMT" sap:VirtualizedContainerService.HintSize="634,636" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <av:Point x:Key="ShapeLocation">260,2.5</av:Point>
+        <av:Size x:Key="ShapeSize">60,75</av:Size>
+        <av:PointCollection x:Key="ConnectorLocation">290,77.5 290,104</av:PointCollection>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Flowchart.StartNode>
+      <x:Reference>__ReferenceID1</x:Reference>
+    </Flowchart.StartNode>
+    <FlowStep x:Name="__ReferenceID1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <av:Point x:Key="ShapeLocation">190,104</av:Point>
+          <av:Size x:Key="ShapeSize">200,52</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">290,156 290,204</av:PointCollection>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Start Migration" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ClickImage_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+        <ui:ClickImage.CursorPosition>
+          <ui:CursorPosition Position="Center">
+            <ui:CursorPosition.OffsetX>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetX>
+            <ui:CursorPosition.OffsetY>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:CursorPosition.OffsetY>
+          </ui:CursorPosition>
+        </ui:ClickImage.CursorPosition>
+        <ui:ClickImage.Image>
+          <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="2" Profile="Basic" TargetImageBase64="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" />
+        </ui:ClickImage.Image>
+        <ui:ClickImage.Target>
+          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='microsoft.sharepoint.migrationtool.advancedapp.exe' cls='HwndWrapper*' title='SharePoint Migration Tool - v3.2.114.7' /&gt;">
+            <ui:Target.TimeoutMS>
+              <InArgument x:TypeArguments="x:Int32" />
+            </ui:Target.TimeoutMS>
+            <ui:Target.WaitForReady>
+              <InArgument x:TypeArguments="ui:WaitForReady" />
+            </ui:Target.WaitForReady>
+          </ui:Target>
+        </ui:ClickImage.Target>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </ui:ClickImage>
+      <FlowStep.Next>
+        <FlowStep x:Name="__ReferenceID0">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <av:Point x:Key="ShapeLocation">190,204</av:Point>
+              <av:Size x:Key="ShapeSize">200,52</av:Size>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ClickImage ContinueOnError="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click File Share" sap:VirtualizedContainerService.HintSize="200,52" sap2010:WorkflowViewState.IdRef="ClickImage_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:ClickImage.CursorPosition>
+              <ui:CursorPosition Position="Center">
+                <ui:CursorPosition.OffsetX>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetX>
+                <ui:CursorPosition.OffsetY>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:CursorPosition.OffsetY>
+              </ui:CursorPosition>
+            </ui:ClickImage.CursorPosition>
+            <ui:ClickImage.Image>
+              <ui:ImageTarget Image="{x:Null}" Accuracy="0.8" InitialScalingFactor="2" Profile="Basic" TargetImageBase64="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" />
+            </ui:ClickImage.Image>
+            <ui:ClickImage.Target>
+              <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="&lt;wnd app='microsoft.sharepoint.migrationtool.advancedapp.exe' cls='HwndWrapper*' title='SharePoint Migration Tool - v3.2.114.7' /&gt;">
+                <ui:Target.TimeoutMS>
+                  <InArgument x:TypeArguments="x:Int32" />
+                </ui:Target.TimeoutMS>
+                <ui:Target.WaitForReady>
+                  <InArgument x:TypeArguments="ui:WaitForReady" />
+                </ui:Target.WaitForReady>
+              </ui:Target>
+            </ui:ClickImage.Target>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </ui:ClickImage>
+        </FlowStep>
+      </FlowStep.Next>
+    </FlowStep>
+    <x:Reference>__ReferenceID0</x:Reference>
+  </Flowchart>
+</Activity>
